@@ -11,6 +11,7 @@ from datetime import datetime
 # Assuming your FastAPI app code is here
 
 async def take_screenshot(url):
+ 
     browser = await launch()
     page = await browser.newPage()
 

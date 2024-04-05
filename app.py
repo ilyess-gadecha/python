@@ -11,8 +11,7 @@ from datetime import datetime
 # Assuming your FastAPI app code is here
 
 async def take_screenshot(url):
-    executable_path = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
-    browser = await launch(executablePath=executable_path)
+    browser = await launch()
     page = await browser.newPage()
 
     # Navigate to the URL
